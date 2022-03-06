@@ -14,6 +14,11 @@
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
     "@types/node": "17.0.21",
     "@types/react": "17.0.39",
@@ -29,7 +34,7 @@
       "prettier --write",
       "eslint --fix src/",
       "tslint --fix --project .",
-      "git add"
+      "git add ."
   ]
   }
 }
